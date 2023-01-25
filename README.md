@@ -80,7 +80,7 @@ Light text: rgb(225, 239, 230);
 Dark background: rgb(0, 4, 17);
 Dark transparency: background-color: rgb(0, 4, 17, .8);
 ​
-​
+​-
 ### Menu Page
 ​
 Review the provided design files for the menu page.
