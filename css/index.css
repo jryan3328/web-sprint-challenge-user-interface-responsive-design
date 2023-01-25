@@ -65,10 +65,13 @@ body {
 
 h1, h2, h3, h4, h5, h6, p, a, i {
     text-decoration: none;
+    color:white;
 }
 
 h1 {
     font-size: 7.5rem;
+    color:white;
+    
 }
 
 h2 {
@@ -91,7 +94,46 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    
 }
+.top-container{
+    background-color: rgba(0, 1, 25, 0.666);
+    margin:0% auto;
+    position:fixed;
+    top:0;
+    width:100%;
+}
+.h1-div{
+    margin-top:2%;
+}
+.nav-div{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    margin:1.5% auto;
+    
+}
+.nav-div a{
+    color:white;
+    opacity:1;
+    font-size:2.8rem;
+}
+.nav-div a:hover{
+    color:wheat;
+}
+.socials{
+    height:10%;
+}
+header div{
+    width:99%;
+    text-align:center;
+    flex-direction:row;
+    
+}
+
 
 /* spacers */
 .spacer {
@@ -111,6 +153,26 @@ header {
     height: 100vh;
     text-align: center;
     background-color: rgb(0, 4, 17);
+    display:flex;
+    flex-flow: column;
+    justify-content:center;
+    align-items:center;
+    
+    
+}
+.h2-div{
+    padding-top:8%;
+}
+.img-gal{
+    margin-top:2%;
+    flex-flow: row wrap;
+    width:80%;
+    justify-content:space-evenly;
+    
+    
+}
+.img-gal img{
+    width:30%;
 }
 
 /* about us section */
@@ -249,5 +311,56 @@ footer {
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+    }
+}
+@media (max-width:428px){
+    h1{
+        font-size:3rem;
+    }
+    h2{
+        font-size:2.5rem;
+    }
+    h3{
+        font-size:1.8rem;
+    }
+    p{
+        font-size:1.5rem;
+    }
+    header{
+        height:85vh;
+    }
+    .nav-div a{
+        padding-top:3%;
+        font-size:1.4rem;
+    }
+    .img-gal img{
+        width:45%;
+    }
+    .about {
+        width: 100%;
+        height: 50vh;
+        text-align: center;
+        background-image: url("../img/staff-cooks.jpg");
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+    
+    .about-container {
+        height: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 4, 17, .8);
+        
+    }
+    
+    .text p{
+        font-size:1.4rem;
+    }
+    .text{
+        margin-bottom:0%;
+        padding:0%;
     }
 }
